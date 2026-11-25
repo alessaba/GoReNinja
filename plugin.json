@@ -1,0 +1,29 @@
+{
+   "pluginmetadataversion": 2,
+   "name": "GoReNinja",
+   "author": "Alessandro Saba",
+   "type": [
+      "ui"
+   ],
+   "api": [
+      "python3"
+   ],
+   "description": "Go reversing toolkit with function, type, interface, build-info and IL-aware decompilation recovery",
+   "longdescription": "GoReNinja is a substantially expanded fork of GoLang binary parser, originally created by Jacopo Ferrigno (https://github.com/dipusone/golang_pclntab_parser) under the MIT license. It parses a Go binary and restores information like:\n\n- Location of the `.gopclntab`/`__gopclntab` section by name, or by searching for its magic when the section is missing or renamed\n- Function names, also organized in components\n- Source file (and line) comments on the functions\n- Go type definitions, as annotated Go types or native Binary Ninja types\n- Optional typelink enumeration, Go 1.27 serialized type descriptors, and interface recovery through itablinks or Go 1.27 contiguous itabs\n- Go build info and the list of source files included in the binary\n- Import of GoReSym JSON output (user and standard-library functions), or running GoReSym and importing it\n\nSupported pclntab layouts: Go 1.2, 1.16, 1.18 and 1.20+. Type recovery is best tested on Go 1.16+ binaries.",
+   "license": {
+      "name": "MIT",
+      "text": "Copyright 2023 Jacopo Ferrigno\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+   },
+   "platforms": [
+      "Darwin",
+      "Windows",
+      "Linux"
+   ],
+   "installinstructions": {
+      "Darwin": "no special instructions, package manager is recommended",
+      "Windows": "no special instructions, package manager is recommended",
+      "Linux": "no special instructions, package manager is recommended"
+   },
+   "version": "1.0.0",
+   "minimumbinaryninjaversion": 3946
+}

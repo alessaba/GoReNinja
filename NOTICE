@@ -1,0 +1,15 @@
+GoReNinja
+=========
+
+GoReNinja is a substantially expanded fork of GoLang binary parser.
+
+Original project: https://github.com/dipusone/golang_pclntab_parser
+Original author: Jacopo Ferrigno
+Original license: MIT (see LICENSE)
+
+The original copyright and license notices are preserved as required by the MIT
+license. Subsequent modifications and new functionality are developed by the
+GoReNinja contributors.
+
+Upstream references used by the original project and this fork are listed in
+README.md.
