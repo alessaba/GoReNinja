@@ -25,7 +25,8 @@ from .datatypes import (
     FuncType,
     InterfaceType,
     PtrType,
-    UnsafePtrType
+    UnsafePtrType,
+    MapType
 )
 
 """
